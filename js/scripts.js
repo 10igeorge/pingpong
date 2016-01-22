@@ -4,17 +4,26 @@ var pingPong = function(userNumber){
     while (i <= userNumber){
       array.push(i);
         if (i % 15 === 0){
-          array.splice([i-1], 1, "<li>pingpong</li>");
+          array.splice([i-1], 1, "pingpong");
           i += 1;
         } else if (i % 5 === 0){
-          array.splice([i-1], 1, "<li>pong</li>");
+          array.splice([i-1], 1, "pong");
           i += 1;
         } else if (i % 3 === 0){
-          array.splice([i-1], 1, "<li>ping</li>");
+          array.splice([i-1], 1, "ping");
           i += 1;
         } else {
+          array.splice([i-1], 1, i);
           i += 1;
         }
     }
   } return array.join(", ");
 };
+
+$(document).ready(function() {
+  $('button#play').click(function() {
+    var userNumber = parseInt($('input#number').val());
+    var final = pingPong(userNumber);
+    $('#results').text(final);
+  });
+});
