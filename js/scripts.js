@@ -18,20 +18,3 @@ var pingPong = function(userNumber){
     }
   } return array.join(", ");
 };
-
-
-
-
-//
-// var countingUp = function(userNumber){
-//   debugger;
-//   var output = [];
-//   if (typeof userNumber === 'number'){
-//     for (var i = 1; i <= userNumber; i++) {
-//         output.push(i);
-//     } return output;
-//   }
-// };
-//
-//
-// countingUp(10);

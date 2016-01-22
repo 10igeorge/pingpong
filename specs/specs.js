@@ -1,8 +1,3 @@
-// describe('countingUp', function() {
-//   it("will count up to the user number by 1", function() {
-//     expect(countingUp(15)).to.eql([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
-//   });
-// });
 describe('pingPong', function() {
   it("replace any number divisible by 15 with 'pingpong' and add into an unordered list", function() {
     expect(pingPong(15)).to.equal("1, 2, <li>ping</li>, 4, <li>pong</li>, <li>ping</li>, 7, 8, <li>ping</li>, <li>pong</li>, 11, <li>ping</li>, 13, 14, <li>pingpong</li>");
