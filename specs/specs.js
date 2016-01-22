@@ -5,9 +5,9 @@
 // });
 describe('pingPong', function() {
   it("replace any number divisible by 3 with 'ping' and add into an unordered list", function() {
-    expect(pingPong(3)).to.equal("<li>ping</li>");
+    expect(pingPong(3)).to.equal("1, 2, <li>ping</li>");
   });
   it("replace any number divisible by 5 with 'pong' and add into an unordered list", function() {
-    expect(pingPong(5)).to.equal("<li>pong</li>");
+    expect(pingPong(5)).to.equal("1, 2, <li>ping</li>, 4, <li>pong</li>");
   });
 });
