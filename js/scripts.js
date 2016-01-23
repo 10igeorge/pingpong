@@ -1,3 +1,5 @@
+// <---========--------Business Logic---------=========--->
+
 var pingPong = function(userNumber){
   var array = [];
   for (var i = 1; i <= userNumber; i++){
@@ -19,6 +21,11 @@ var pingPong = function(userNumber){
     }
   } return array.join(", ");
 };
+
+
+
+
+// <---========--------User Interface Logic---------=========--->
 
 $(document).ready(function() {
   $('button#play').click(function() {

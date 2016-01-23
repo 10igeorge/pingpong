@@ -1,4 +1,4 @@
-# pingpong
+# pingpong1
 
 #### Created By
 Isabelle George
@@ -12,10 +12,10 @@ Enjoy!
 
 #### Setup/Installation Requirements
 
-* run $git clone https://github.com/10igeorge/pingpongcodereview.git
+* run $git clone https://github.com/10igeorge/pingpong.git
 
 #### Home Page Landing
-https://10igeorge.github.io/pingpongcodereview
+https://10igeorge.github.io/pingpong
 
 ##### License
 
