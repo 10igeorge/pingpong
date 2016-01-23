@@ -2,26 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
     <script src="js/jquery-1.12.0.min.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <title>PingPong!</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Ping Pong!</h1>
+    <div class="jumbotron">
+      <h1>Ping Pong!</h1><br>
       <form class="form-inline">
         <div class="form-group">
-          <label for="enteranumber">Count up to any number to play pingpong:</label>
+          <label for="enteranumber">Count up to any number to play pingpong:</label><br><br>
           <input type="number" class="form-control" id="number" placeholder="Enter a number">
-        </div>
-        <button id="play" type="button" class="btn btn-default">Play</button>
+        </div><br><br>
+        <button id="play" type="button" class="btn btn-default btn-success btn-lg">Play</button>
       </form>
-      <div class="results">
-        <ul id="results">
-        </ul>
-      </div>
+    </div>
+    <div class="container">
+        <img src="img/pingpong.jpg" alt= "creepy dude playing ping pong" id="image">
+        <span id="results"></span>
     </div>
   </body>
 </html>

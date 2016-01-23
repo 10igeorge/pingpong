@@ -24,6 +24,7 @@ $(document).ready(function() {
   $('button#play').click(function() {
     var userNumber = parseInt($('input#number').val());
     var final = pingPong(userNumber);
+    $('#image').hide();
     $('#results').text(final);
   });
 });
