@@ -4,23 +4,24 @@ var pingPong = function(userNumber){
   var array = [];
   for (var i = 1; i <= userNumber; i++){
     while (i <= userNumber){
-      array.push(i);
         if (i % 15 === 0){
-          array.splice([i-1], 1, "pingpong");
+          array.splice([i], 1, "pingpong");
           i += 1;
         } else if (i % 5 === 0){
-          array.splice([i-1], 1, "pong");
+          array.splice([i], 1, "pong");
           i += 1;
         } else if (i % 3 === 0){
-          array.splice([i-1], 1, "ping");
+          array.splice([i], 1, "ping");
           i += 1;
         } else {
-          array.splice([i-1], 1, i);
+          array.splice([i], 1, i);
           i += 1;
         }
     }
   } return array.join(", ");
 };
+
+
 
 
 
