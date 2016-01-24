@@ -21,7 +21,11 @@ var pingPong = function(userNumber){
   } return array.join(", ");
 };
 
-
+var negativeInput = function(userNumber){
+  if (userNumber <= 0){
+    return "Please enter value greater than 0"
+  }
+}
 
 
 
@@ -32,7 +36,12 @@ $(document).ready(function() {
   $('button#play').click(function() {
     var userNumber = parseInt($('input#number').val());
     var final = pingPong(userNumber);
-    $('#image').hide();
-    $('#results').text(final);
+    var negative = negativeInput(userNumber);
+    if (userNumber = negative){
+      alert("Please enter a value greater than zero");
+    } else {
+      $('#image').hide();
+      $('#results').text(final);
+    }
   });
 });

@@ -9,3 +9,9 @@ describe('pingPong', function() {
     expect(pingPong(5)).to.equal("1, 2, ping, 4, pong");
   });
 });
+
+describe('negativeInput', function() {
+  it("will alert user of error if negative number is inputted", function() {
+    expect(negativeInput(-4)).to.equal("Please enter a value greater than 0");
+  });
+});
